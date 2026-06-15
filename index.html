@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Test Website</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="logo" href="#top" aria-label="Test Website home">TestSite</a>
+        <div class="nav-links">
+          <a href="#features">Features</a>
+          <a href="#demo">Demo</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+
+      <section id="top" class="hero">
+        <p class="eyebrow">Simple static starter</p>
+        <h1>A friendly test website for quick demos.</h1>
+        <p class="hero-copy">
+          Use this lightweight page to verify hosting, styling, and basic browser behavior without any build tooling.
+        </p>
+        <a class="button" href="#demo">Try the counter</a>
+      </section>
+    </header>
+
+    <main>
+      <section id="features" class="section feature-grid" aria-labelledby="features-heading">
+        <div class="section-heading">
+          <p class="eyebrow">What is included</p>
+          <h2 id="features-heading">Everything needed for a smoke test.</h2>
+        </div>
+        <article class="card">
+          <h3>Responsive layout</h3>
+          <p>The page adapts from mobile screens to desktop displays using plain CSS.</p>
+        </article>
+        <article class="card">
+          <h3>No dependencies</h3>
+          <p>Open the HTML file directly or serve it with any static file server.</p>
+        </article>
+        <article class="card">
+          <h3>Interactive demo</h3>
+          <p>A tiny JavaScript counter confirms client-side scripting is working.</p>
+        </article>
+      </section>
+
+      <section id="demo" class="section demo-panel" aria-labelledby="demo-heading">
+        <div>
+          <p class="eyebrow">Browser check</p>
+          <h2 id="demo-heading">Interactive counter</h2>
+          <p>Click the button to update the count and test JavaScript execution.</p>
+        </div>
+        <div class="counter-card">
+          <span class="counter-label">Current count</span>
+          <strong id="counter" aria-live="polite">0</strong>
+          <button id="increment" class="button" type="button">Add one</button>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact" aria-labelledby="contact-heading">
+        <p class="eyebrow">Ready to deploy</p>
+        <h2 id="contact-heading">This test page is intentionally simple.</h2>
+        <p>Customize the content, colors, or copy to match the environment you want to validate.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Test Website. Built for quick verification.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
